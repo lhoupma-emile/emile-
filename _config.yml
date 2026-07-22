@@ -1,0 +1,124 @@
+# -----------------------------
+# Site settings
+# -----------------------------
+title: "Émile Lhoupma"
+description: "Étudiant en Informatique & Télécommunications | Développeur Web | Futur Expert en Cybersécurité"
+url: "https://TON-USERNAME.github.io"
+baseurl: ""
+
+# -----------------------------
+# Personal information
+# -----------------------------
+author:
+  name: "Émile Lhoupma"
+  avatar: "/assets/images/profile.jpg"
+  bio: >
+    Étudiant en Licence Informatique & Télécommunications
+    passionné par le développement web, Flutter,
+    les réseaux informatiques et la cybersécurité.
+
+  location: "Moundou, Tchad"
+
+  email: "lhoups1emile@gmail.com"
+
+# -----------------------------
+# Social Links
+# -----------------------------
+github_username: TON-USERNAME
+
+linkedin_username:
+
+twitter_username:
+
+facebook_username:
+
+instagram_username:
+
+youtube_username:
+
+# -----------------------------
+# Theme
+# -----------------------------
+theme: minima
+
+# ou si tu utilises AcademicPages
+# remote_theme: "mmistakes/minimal-mistakes"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# -----------------------------
+# Navigation
+# -----------------------------
+header_pages:
+  - index.md
+  - about.md
+  - projects.md
+  - experience.md
+  - contact.md
+
+# -----------------------------
+# Markdown
+# -----------------------------
+markdown: kramdown
+highlighter: rouge
+
+# -----------------------------
+# Pagination
+# -----------------------------
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+# -----------------------------
+# Collections
+# -----------------------------
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+# -----------------------------
+# Defaults
+# -----------------------------
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "single"
+
+# -----------------------------
+# Build settings
+# -----------------------------
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# -----------------------------
+# SEO
+# -----------------------------
+lang: fr
+timezone: Africa/Ndjamena
+
+# -----------------------------
+# Google Analytics (optionnel)
+# -----------------------------
+google_analytics:
+
+# -----------------------------
+# Footer
+# -----------------------------
+footer:
+  links:
+    - label: GitHub
+      icon: fab fa-github
+      url: "https://github.com/TON-USERNAME"
+
+    - label: Email
+      icon: fas fa-envelope
+      url: "mailto:lhoups1emile@gmail.com"
